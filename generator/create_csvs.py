@@ -1,8 +1,4 @@
 """Generate CSVs of random data for Warbler.
-
-Students won't need to run this for the exercise; they will just use the CSV
-files that this generates. You should only need to run this if you wanted to
-tweak the CSV formats or generate fewer/more rows.
 """
 
 import os
@@ -40,9 +36,9 @@ image_urls = [
 ]
 
 # Generate random header image URLs to use for users
-# NOTE: You will need to create a dev account at unsplash.com, 
+# NOTE: You will need to create a dev account at unsplash.com,
 # generate an access key and set that to an environment
-# variable to successfully ping the API. 
+# variable to successfully ping the API.
 
 header_image_urls = [
     requests.get(
