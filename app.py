@@ -401,17 +401,29 @@ def homepage():
     # breakpoint()
 
     if g.user:
-        timeline_ids = [user.id for user in g.user.following]
-        timeline_ids.append(g.user.id)
+        if g.user.following: # if user is following anyone
+            timeline_ids = [user.id for user in g.user.following]
+            timeline_ids.append(g.user.id)
 
-        messages = (Message
-                    .query
-                    .filter(Message.user_id.in_(timeline_ids))
-                    .order_by(Message.timestamp.desc())
-                    .limit(100)
-                    .all())
+            messages = (Message
+                        .query
+                        .filter(Message.user_id.in_(timeline_ids))
+                        .order_by(Message.timestamp.desc())
+                        .limit(100)
+                        .all())
 
-        return render_template('home.html', messages=messages)
+            return render_template('home.html', messages=messages)
+        elif g.user.following == []:
+            timeline_ids = [user.id for user in User.query.all()]
+
+            messages = (Message
+                        .query
+                        .filter(Message.user_id.in_(timeline_ids))
+                        .order_by(Message.timestamp.desc())
+                        .limit(100)
+                        .all())
+
+            return render_template('home.html', messages=messages)
 
     else:
         return render_template('home-anon.html')
