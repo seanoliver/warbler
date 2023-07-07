@@ -2,18 +2,23 @@
 	"version": 2,
 	"builds": [
 		{
-			"src": "api/app.py",
+			"src": "/app.py",
 			"use": "@vercel/python"
+		},
+		{
+			"src": "/static/**",
+			"use": "@vercel/static"
 		}
 	],
 	"routes": [
 		{
 			"src": "/static/(.*)",
+			"headers": { "cache-control": "public, max-age=0, must-revalidate" },
 			"dest": "/static/$1"
 		},
 		{
 			"src": "/(.*)",
-			"dest": "/api/app.py"
+			"dest": "/app.py"
 		}
 	]
 }
