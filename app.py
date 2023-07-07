@@ -390,7 +390,7 @@ def toggle_like(message_id):
 # Homepage and error pages
 
 
-@app.get('/')
+@app.get('/') # type: ignore
 def homepage():
     """Show homepage:
 
