@@ -69,6 +69,10 @@ This project is a great way to learn more about:
 
 I'm excited to keep building on this project and add more features. Feel free to contribute!
 
+You can log into the [demo site](https://sean-warbler.onrender.com/) with the following credentials:
+- Username: `guest`
+- Password: `password`
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Screenshots
