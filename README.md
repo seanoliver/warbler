@@ -10,7 +10,7 @@
     A less dystopian version of another popular social media app. <br />Tweet your thoughts, chirp your feelings, and warble your heart out.
     <br />
     <br />
-    <a href="https://sean-warbler.onrender.com/" target="_blank">View Demo</a>
+    <a href="https://warbler.seanoliver.dev/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/seanoliver/warbler/issues">Report Bug</a>
     ·
@@ -69,7 +69,7 @@ This project is a great way to learn more about:
 
 I'm excited to keep building on this project and add more features. Feel free to contribute!
 
-You can log into the [demo site](https://sean-warbler.onrender.com/) with the following credentials:
+You can log into the [demo site](https://warbler.seanoliver.dev/) with the following credentials:
 - Username: `guest`
 - Password: `password`
 
@@ -222,7 +222,7 @@ Your Name - [@SeanOliver](https://twitter.com/SeanOliver) - helloseanoliver@gmai
 
 Project Link: [https://github.com/seanoliver/warbler](https://github.com/seanoliver/warbler)
 
-Live Demo: [https://sean-warbler.onrender.com/](https://sean-warbler.onrender.com/)
+Live Demo: [https://warbler.seanoliver.dev/](https://warbler.seanoliver.dev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
